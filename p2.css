@@ -1,0 +1,61 @@
+html {
+  font-family: SCP;
+  font-weight: bolder;
+}
+
+.bgContainer {
+  background-position: center;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+  background-color: #FFEE99;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-family: SCP;
+  src: url(fonts/SourceCodePro-Regular.tff);
+}
+
+.centerDiv {
+  text-align: center;
+}
+
+.user_input {
+  width: 50px;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+
+    text-decoration: none;
+    color: white;
+    background-color: #004080;
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+}
+.table {
+	display: table;
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+	}
