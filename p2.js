@@ -55,7 +55,7 @@ function checkP3() {
 function validate1() {
   var input = document.getElementById("input").value;
 
-  if (input == 1190) {
+  if (input == 125) {
     var message = "Great! You have defeated the Enemy and live to fight another day.";
     won++;
     setCookie("hwon", 1, 2);
@@ -63,8 +63,10 @@ function validate1() {
     setCookie("hobgoblinWin", hobgoblinWin, 2);
     document.getElementById("input").remove();
     document.getElementById("check").innerHTML = "";
+    document.getElementById("check").innerHTML = message;
     document.getElementById("return").innerHTML = "Return to camp and prepare for the next challenge.";
     document.getElementById("giveup").innerHTML = "Return to Camp";
+
   }
   else if (isNaN(input)) {var message = "Please enter a number.";}
 
@@ -74,7 +76,6 @@ function validate1() {
     hobgoblinLoss++;
     setCookie("loss", loss, 2);
     setCookie("hobgoblinLoss",hobgoblinLoss,2);
-    document.getElementById("check").innerHTML = message;
   }
 }
 
@@ -84,12 +85,13 @@ function validate2() {
   var won = getCookie("won");
   var loss = getCookie("loss");
 
-  if (input == "-1.5") {
+  if (input == "32") {
     var message = "Great! You have defeated the Enemy and live to fight another day.";
     won++;
     setCookie("twon", 1, 2);
     setCookie("won", won, 2);
     document.getElementById("input").remove();
+    document.getElementById("check").innerHTML = message;
     document.getElementById("check").innerHTML = "";
     document.getElementById("return").innerHTML = "Return to camp and prepare for the next challenge.";
     document.getElementById("giveup").innerHTML = "Return to Camp";
@@ -115,6 +117,7 @@ function validate3() {
     setCookie("dwon", 1, 2);
     setCookie("won", won, 2);
     document.getElementById("input").remove();
+    document.getElementById("check").innerHTML = message;
     document.getElementById("check").innerHTML = "";
     document.getElementById("return").innerHTML = "Return to camp and prepare for the next challenge.";
     document.getElementById("giveup").innerHTML = "Return to Camp";

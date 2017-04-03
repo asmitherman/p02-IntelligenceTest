@@ -44,7 +44,9 @@ a.button {
     color: white;
     background-color: #004080;
 }
-
+li {
+       list-style-type: none;
+}
 td {
   text-align: left;
   padding: 8px;
